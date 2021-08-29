@@ -40,7 +40,7 @@ const EditService = ({setEditClicked, onUpdate, serviceId}) => {
         </div>
         <div className='form-group'>
           <label>Where: </label>
-          <input type="text" maxLength='15' className="form-control" value={location} onChange={(e)=>{setLocation(e.target.value)}} placeholder='Where did it take place?'/>
+          <input type="text" maxLength='20' className="form-control" value={location} onChange={(e)=>{setLocation(e.target.value)}} placeholder='Where were you at?'/>
         </div>
         <h6 className={`${message ? 'text-danger': ''}`}>{message}</h6>
         <input type="submit" value='Update' className='btn btn-primary btn-block' style={{backgroundColor:"#7ea865"}}/>

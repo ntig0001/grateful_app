@@ -15,7 +15,7 @@ const Service = ({service, onUpdate, onDelete}) => {
           <div className="banner-img"></div>
           <img src={thank_you_img} alt="thank you" className="thanks-img"/>
           <div style={serviceP}>
-            <p>Grateful for {service.individual} who {service.act} when we were {service.location}</p>
+            <p>Grateful for {service.individual} who {service.act} when we were at {service.location}</p>
           </div>
           <div className='bottom'>
             <Button default_class={'btn btn-secondary'} text={'Edit'} onClick={()=>{

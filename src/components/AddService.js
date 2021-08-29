@@ -41,7 +41,7 @@ const AddService = ({onAdd}) => {
         </div>
         <div className='form-group'>
           <label>Where: </label>
-          <input type="text" maxLength='15' className="form-control" value={location} onChange={(e)=>{setLocation(e.target.value)}} placeholder='Where did it take place?'/>
+          <input type="text" maxLength='20' className="form-control" value={location} onChange={(e)=>{setLocation(e.target.value)}} placeholder='Where were you at?'/>
         </div>
         <h4 className={`${message ? 'text-danger': ''}`}>{message}</h4>
         <input type="submit" value='Save' className='btn btn-success btn-block'/>
