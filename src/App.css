@@ -8,10 +8,6 @@
 html{
   margin: 0;
   padding: 0;
-  background: url("./img/grateful.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 100vh;
 }
 
 .App {
@@ -19,21 +15,27 @@ html{
   color: bisque;
   font-weight: bold;
   position: absolute;
-  height: 100vh;
+  height: auto;
+  width: 100%;
   background-image: linear-gradient(to right,
   rgba(0,0,0,1) 10%,
   rgba(0,0,0,.9) 40%,
   rgba(0,0,0,.7) 70%,
   rgba(0,0,0,0) 100%
-  );
+  ), url("./img/grateful.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .wrapper{
   display: grid;
   grid-template-columns: 1fr;
+  align-items: center;
+  width: 100%;
   gap: 2rem;
   margin: 0rem;
-  padding: 2rem;
+  padding: 0rem;
   background: url("./img/grateful.jpg");
   background-position: center;
   background-size: cover;
@@ -42,9 +44,10 @@ html{
 }
 
 .wrapper-grid{
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, 20rem);
-  justify-content: center;
+  align-items: center;
 }
 
 .card{
@@ -117,7 +120,7 @@ html{
 }
 
 .footer{
-  text-align: end;
+  text-align: center;
 }
 
 .bottom{
