@@ -128,3 +128,9 @@ html{
   position: absolute;
   width: 100%;
 }
+
+@media only screen and (max-width: 600px) {
+  body {
+    position: absolute;
+  }
+}
