@@ -17,10 +17,10 @@ html{
   height: 100%;
   width: 100%;
   background-image: linear-gradient(to right,
-  rgba(0,0,0,1) 10%,
-  rgba(0,0,0,.9) 40%,
-  rgba(0,0,0,.7) 70%,
-  rgba(0,0,0,0) 100%
+  rgb(234, 181, 107) 10%,
+  rgba(164, 96,0,.9) 60%,
+  rgba(164, 96,0,.7) 70%,
+  rgba(164, 96,0,0) 100%
   ), url("./img/grateful.jpg");
   background-position: center;
   background-size: cover;
@@ -45,8 +45,8 @@ html{
 .wrapper-grid{
   width: 100%;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 20rem);
   align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
 }
 
 .card{
@@ -110,7 +110,7 @@ html{
 
 .App .header{
   margin: 14rem 4rem;
-  text-align: left;
+  text-align: center;
   font-weight: 400;
 }
 
