@@ -7,7 +7,6 @@
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.21.1",
-    "node": "^16.17.0",
     "bootstrap": "^5.1.0",
     "concurrently": "^6.2.0",
     "dotenv": "^10.0.0",
@@ -36,6 +35,9 @@
       "react-app",
       "react-app/jest"
     ]
+  },
+  "engines": {
+    "node": "^16.17.0"
   },
   "browserslist": {
     "production": [
