@@ -26,8 +26,7 @@
     "install-client": "npm install",
     "install-server": "cd server && npm install && cd ..",
     "heroku-postbuild": "npm run install-client && npm run install-server && npm run build",
-    "server": "cd server && npm run server",
-    "dev-server": "cd server && npm run dev-server",
+    "dev-server": "cd server && npm run server",
     "dev": "concurrently \"npm run client\" \"npm run dev-server\""
   },
   "eslintConfig": {
