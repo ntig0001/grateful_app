@@ -1,6 +1,6 @@
+import React, { useState } from "react";
 import Button from "./Button";
 import EditService from "./EditService";
-import { useState } from "react";
 import thank_you_img from "../img/thank_you_img.jpg";
 const Service = ({service, onUpdate, onDelete}) => {
   const [editClicked, setEditClicked] = useState(false);

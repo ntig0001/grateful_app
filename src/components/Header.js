@@ -1,3 +1,4 @@
+import React from "react";
 import Button from "./Button"
 import { useLocation } from "react-router-dom"
 const Header = ({onClick, isHome}) => {

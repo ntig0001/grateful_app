@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import React, {useState} from 'react';
 const AddService = ({onAdd}) => {
   const [act, setAct] = useState('')
   const [location, setLocation] = useState('')
