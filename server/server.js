@@ -9,8 +9,7 @@ let service_route = require('./routes/service_routes');
 const app = express();
 
 //connect with the database
-mongoose.Promise = global.Promise
-mongoose.connect(process.env.MONGODB_URI || database.db, {
+mongoose.connect(`mongodb+srv://${process.env.DB_USER}:${process.env.DB_PASS}@elyncluster.ab031.mongodb.net/services?retryWrites=true&w=majority` || database.db, {
   useNewUrlParser: true,
   useUnifiedTopology: true
 })
